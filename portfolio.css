@@ -1,0 +1,210 @@
+
+/* resets*/
+*{
+    padding: 0;
+    margin: 0;
+
+}
+/* header bar styling*/
+header nav{
+    background-color: rgb(219, 58, 115);
+    position: sticky;
+    top: 0;
+    width: 100%;
+    height: 25px;
+    justify-content: end;
+    display: flex;
+    text-align: center;
+    
+}
+/* nav bar text */
+header nav h2{
+    color: rgb(174, 255, 255);
+    font-family: fantasy;
+    justify-content: start;
+    display: flex;
+}
+/* nav buttons*/
+header nav a{
+    /* display: flex; */
+    color: rgb(174, 255, 255);
+    text-decoration: none;
+    text-align: center;
+    margin: 4px 1%;
+}
+main{
+    height: 300px;
+    /* background-color: black; */
+    position: absolute;
+    width: 30%;
+}
+.animation1{
+    height: 2.5%;
+    width: 20%;
+    animation-duration: 7s;
+    animation-iteration-count: infinite;
+    animation-name: animation;
+    animation-direction: alternate;
+    position: relative;
+    animation-timing-function: ease-in-out;
+}
+#animation-2{
+    animation-delay: .5s;
+}
+#animation-3{
+        /* left: 20%; */
+        animation-delay: 1s;
+}
+#animation-4{
+    /* left: 30%; */
+    animation-delay: 1.5s;
+}
+#animation-5{
+    /* left: 40%; */
+    animation-delay: 2s;
+}
+#animation-6{
+    /* left: 50%; */
+    animation-delay: 2.5s;
+}
+
+#animation-7{
+    animation-delay: 3s;
+}
+#animation-8{
+     /* left: 70%; */
+    animation-delay: 3.5s;
+}
+#animation-9{
+    /* left: 80%; */
+    animation-delay: 4s;
+}
+#animation-10{
+     /* left: 90%; */
+    animation-delay: 4.5s;
+    /* animation-name: animation; */
+}
+
+#animation-11{
+    animation-delay: 5s;
+}
+#animation-12{
+    animation-delay: 5.5s;
+}
+#animation-13{
+    animation-delay: 6s;
+}
+#animation-14{
+    animation-delay: 6.5s;
+}
+#animation-15{
+    animation-delay: 7s;
+}
+#animation-16{
+    animation-delay: 7.5s;
+}
+#animation-17{
+    animation-delay: 8s;
+}
+#animation-18{
+    animation-delay: 8.5s;
+}
+#animation-19{
+    animation-delay: 9s;
+}
+#animation-20{
+    animation-delay: 9.5s;
+}
+#animation-21{
+    animation-delay: 10s;
+}
+#animation-22{
+    animation-delay: 10.5s;
+}
+#animation-23{
+    animation-delay: 11s;
+}
+#animation-24{
+    animation-delay: 11.5s;
+}
+#animation-25{
+    animation-delay: 12s;
+}
+#animation-26{
+    animation-delay: 12.5s;
+}
+#animation-27{
+    animation-delay: 13s;
+}
+#animation-28{
+    animation-delay: 13.5s;
+}
+#animation-29{
+    animation-delay: 14s;
+}
+#animation-30{
+    animation-delay: 14.5s;
+}
+#animation-31{
+    animation-delay: 15s;
+}
+#animation-32{
+    animation-delay: 15.5s;
+}
+#animation-33{
+    animation-delay: 16s;
+}
+#animation-34{
+    animation-delay: 16.5s;
+}
+#animation-35{
+    animation-delay: 17s;
+}
+#animation-36{
+    animation-delay: 17.5s;
+}
+#animation-37{
+    animation-delay: 18s;
+}
+#animation-38{
+    animation-delay: 18.5s;
+}
+#animation-39{
+    animation-delay: 19s;
+}
+#animation-40{
+    animation-delay: 19.5s;
+}
+#animation-housing{
+    display: flex;
+    bottom: 0;
+    height: 30%;
+    background-color: black;
+}
+
+ @keyframes animation{
+    from {left: 0px} to {left: 90%}
+    0% {background-color: rgb(5, 162, 162);}
+    10% {background-color: rgb(11, 196, 242);}   
+    40% {background-color: rgb(58, 103, 208);}
+    /* 50% {background-color: rgb(121, 63, 208);}  */
+    70% {background-color: rgb(219, 58, 115);}
+    /* 90% {background-color: rgb(219, 175, 54);}  */
+    100% {background-color: rgb(11, 242, 242);}
+
+} 
+
+    /* @keyframes animation{
+        0% {background-color: rgb(5, 162, 162); top: 0% ;}
+        10% {background-color: rgb(11, 242, 242) ; top: 10% ;}
+        20% {background-color: rgb(134, 251, 255) ; top: 20% ;}
+        30% {background-color: rgb(110, 188, 236) ; top: 30% ;}
+        40% {background-color: rgb(58, 151, 208) ; top: 40% ;}
+        50% {background-color: rgb(63, 100, 208) ; top: 50% ;}
+        60% {background-color: rgb(160, 43, 223) ; top: 60% ;}
+        70% {background-color: rgb(207, 99, 240) ; top: 70% ;}
+        80% {background-color: rgb(240, 180, 247) ; top: 80% ;}
+        90% {background-color: rgb(238, 135, 135) ; top: 90% ;}
+        100% {background-color: rgb(234, 61, 61) ; top: 100% ;}
+    
+} */
