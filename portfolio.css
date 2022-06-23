@@ -210,9 +210,9 @@ flex-grow: 2;
 margin: 15px;
 padding: 15px;
 width: 300px;
-/* transform: rotate(20deg); */
 background-color: rgb(31, 236, 236);
 }
+/* gives height to the h2 element in past-work*/
 .past-work h2{
     height: 30px;
 }
