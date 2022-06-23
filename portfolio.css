@@ -3,41 +3,53 @@
 *{
     padding: 0;
     margin: 0;
-
 }
 /* header bar styling*/
-header nav{
-    background-color: rgb(219, 58, 115);
-    position: sticky;
+header.main-header{
     top: 0;
     width: 100%;
-    height: 25px;
-    justify-content: end;
     display: flex;
     text-align: center;
-    
 }
+/* colors and shapes the nav bar*/
+header nav{
+    background-color: rgb(219, 58, 115);
+    display: flex  ;
+    justify-content: space-between;
+    height: 35px;
+    width: 100%;
+    margin: 0 1px 2px 1px;
+}
+
 /* nav bar text */
 header nav h2{
-    color: rgb(174, 255, 255);
+    color: rgb(11, 242, 242);
     font-family: fantasy;
     justify-content: start;
     display: flex;
+    margin: 4px 2%;
 }
 /* nav buttons*/
 header nav a{
-    /* display: flex; */
     color: rgb(174, 255, 255);
     text-decoration: none;
     text-align: center;
     margin: 4px 1%;
 }
-main{
+/* sizes avatar img*/
+.img-size{
+    display: flex;
+    width: 20%;
+    height: 20%;
+    float: right;
+}
+/* sizes the graphic*/
+aside{
     height: 300px;
-    /* background-color: black; */
     position: absolute;
     width: 30%;
 }
+/* the primary animation specs*/
 .animation1{
     height: 2.5%;
     width: 20%;
@@ -48,15 +60,14 @@ main{
     position: relative;
     animation-timing-function: ease-in-out;
 }
+/* next 40 id's just control the timing of the animation*/
 #animation-2{
     animation-delay: .5s;
 }
 #animation-3{
-        /* left: 20%; */
         animation-delay: 1s;
 }
 #animation-4{
-    /* left: 30%; */
     animation-delay: 1.5s;
 }
 #animation-5{
@@ -64,27 +75,20 @@ main{
     animation-delay: 2s;
 }
 #animation-6{
-    /* left: 50%; */
     animation-delay: 2.5s;
 }
-
 #animation-7{
     animation-delay: 3s;
 }
 #animation-8{
-     /* left: 70%; */
     animation-delay: 3.5s;
 }
 #animation-9{
-    /* left: 80%; */
     animation-delay: 4s;
 }
 #animation-10{
-     /* left: 90%; */
     animation-delay: 4.5s;
-    /* animation-name: animation; */
 }
-
 #animation-11{
     animation-delay: 5s;
 }
@@ -175,36 +179,90 @@ main{
 #animation-40{
     animation-delay: 19.5s;
 }
-#animation-housing{
-    display: flex;
-    bottom: 0;
-    height: 30%;
-    background-color: black;
+/* sizes the upper part of the page*/
+#height{
+    height: 500px;
 }
-
+/* creates the flexbox for the about me*/
+.flexbox{
+    display: flex;
+    background-color: rgb(31, 236, 236);
+    margin: 100px 30px;
+}
+/* creates the flexbox for the application links*/
+.past-work{
+    background-color:rgb(225, 126, 220);
+    padding: 15px;
+    margin: 30px 20px 30px 20px;
+    height: 300px;
+    display: flex;
+    flex-wrap: wrap;
+    }
+ /* creates space around the 3 imgs*/
+.img-size1{
+height: 200px;
+display: flex;
+flex-grow: 2;
+margin: 15px;
+padding: 15px;
+transform: rotate(20deg);
+background-color: rgb(31, 236, 236);
+}
+/* creates the flexbox for the 3 smaller imgs*/
+div.past-work{
+    display: flex;
+}
+/* creates the size and background color for the larger img*/
+.img-size2{
+    height: 400px;
+    width: 90%;
+    display: flex;
+    flex-grow: 2;
+    margin: 15px;
+    padding: 15px;
+    background-color: rgb(31, 236, 236);
+    transform: rotate(-5deg);
+}
+/* creates the footer size and background color*/
+#footer-set {
+    bottom: 0;
+    width: 100%;
+    height: 40px;
+    background-color: rgb(219, 58, 115);
+    text-decoration: none;
+    color: rgb(31, 236, 236);
+}
+/* styles the text in the footer*/
+footer a{
+    text-decoration: none;
+    color: rgb(31, 236, 236);
+    margin: 10px;
+    font-weight: 600;
+}
+/* the color change and movement elements of the animation*/
  @keyframes animation{
     from {left: 0px} to {left: 90%}
     0% {background-color: rgb(5, 162, 162);}
     10% {background-color: rgb(11, 196, 242);}   
     40% {background-color: rgb(58, 103, 208);}
-    /* 50% {background-color: rgb(121, 63, 208);}  */
     70% {background-color: rgb(219, 58, 115);}
-    /* 90% {background-color: rgb(219, 175, 54);}  */
     100% {background-color: rgb(11, 242, 242);}
-
 } 
+/* responsive design elements*/
+@media screen and (min-width: 1200px) {
+    body {
+        background-color:mistyrose
+    }
+}
+@media screen and (max-width: 1200px) {
+    aside {
+        transform: rotate(25deg);
 
-    /* @keyframes animation{
-        0% {background-color: rgb(5, 162, 162); top: 0% ;}
-        10% {background-color: rgb(11, 242, 242) ; top: 10% ;}
-        20% {background-color: rgb(134, 251, 255) ; top: 20% ;}
-        30% {background-color: rgb(110, 188, 236) ; top: 30% ;}
-        40% {background-color: rgb(58, 151, 208) ; top: 40% ;}
-        50% {background-color: rgb(63, 100, 208) ; top: 50% ;}
-        60% {background-color: rgb(160, 43, 223) ; top: 60% ;}
-        70% {background-color: rgb(207, 99, 240) ; top: 70% ;}
-        80% {background-color: rgb(240, 180, 247) ; top: 80% ;}
-        90% {background-color: rgb(238, 135, 135) ; top: 90% ;}
-        100% {background-color: rgb(234, 61, 61) ; top: 100% ;}
-    
-} */
+    }
+}
+@media screen and (max-width: 1200px) {
+    header.main-header,  header nav, header nav a, header nav h2{
+        background-color: rgb(11, 242, 242);
+        color: rgb(219, 58, 115);
+    }
+}
