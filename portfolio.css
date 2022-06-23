@@ -4,6 +4,9 @@
     padding: 0;
     margin: 0;
 }
+body, html{
+    height: 100%;
+}
 /* header bar styling*/
 header.main-header{
     top: 0;
@@ -71,7 +74,6 @@ aside{
     animation-delay: 1.5s;
 }
 #animation-5{
-    /* left: 40%; */
     animation-delay: 2s;
 }
 #animation-6{
@@ -196,8 +198,10 @@ aside{
     margin: 30px 20px 30px 20px;
     height: 300px;
     display: flex;
-    flex-wrap: wrap;
     }
+#work h2{
+    transform: rotate(-5deg);
+}
  /* creates space around the 3 imgs*/
 .img-size1{
 height: 200px;
@@ -205,17 +209,22 @@ display: flex;
 flex-grow: 2;
 margin: 15px;
 padding: 15px;
-transform: rotate(20deg);
+width: 300px;
+/* transform: rotate(20deg); */
 background-color: rgb(31, 236, 236);
+}
+.past-work h2{
+    height: 30px;
 }
 /* creates the flexbox for the 3 smaller imgs*/
 div.past-work{
     display: flex;
+
 }
 /* creates the size and background color for the larger img*/
 .img-size2{
     height: 400px;
-    width: 90%;
+    width: 70%;
     display: flex;
     flex-grow: 2;
     margin: 15px;
